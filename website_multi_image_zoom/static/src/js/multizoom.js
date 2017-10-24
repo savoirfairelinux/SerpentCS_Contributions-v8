@@ -5,7 +5,7 @@
 // requires: a modified version of Dynamic Drive's Featured Image Zoomer (w/ adjustable power) (included)
 
 /*Featured Image Zoomer (May 8th, 2010)
-* This notice must stay intact for usage 
+* This notice must stay intact for usage
 * Author: Dynamic Drive at http://www.dynamicdrive.com/
 * Visit http://www.dynamicdrive.com/ for full source code
 */
@@ -239,7 +239,7 @@ $(document).ready(function() {
 				$cursorshade = $('<div class="cursorshade" style="visibility:hidden;position:absolute;left:0;top:0;z-index:'+basezindex+';" />')
 					.css({border: setting.cursorshadeborder, opacity: setting.cursorshadeopacity, backgroundColor: setting.cursorshadecolor})
 					.appendTo(document.body);
-			} else { 
+			} else {
 				$cursorshade = $('<div />'); //dummy shade div to satisfy $tracker.data('specs')
 			}
 			$statusdiv = $('<div class="zoomstatus preloadevt" style="position:absolute;visibility:hidden;left:0;top:0;z-index:'+basezindex+';" />')
@@ -364,7 +364,7 @@ $(document).ready(function() {
 		hashre: /^#/
 	});
 
-	$.fn.addimagezoom = function(options){
+	/*$.fn.addimagezoom = function(options){
 		var sel = this.selector, $thumbs = $(sel.replace(featuredimagezoomer.hashre, '.') + '.thumbs a');
 		options = options || {};
 		if(options.multizoom !== null && ($thumbs).size()){
@@ -385,6 +385,6 @@ $(document).ready(function() {
 				return true; //skip to next matched element
 			featuredimagezoomer.init($(this), options);
 		});
-	};
+	};*/
 
 });
